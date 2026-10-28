@@ -1,0 +1,13 @@
+# Pinned rendering stack. WeasyPrint is the only direct dependency;
+# the rest are its rendering dependencies, pinned because a font or
+# layout library upgrade can change pagination and therefore page
+# numbers in the contents. Install in a fresh venv:
+#   python -m venv .venv && .venv/bin/pip install -r requirements.txt
+weasyprint==70.0
+pydyf==0.13.0
+fonttools==4.67.0
+tinycss2==1.5.1
+cssselect2==0.10.1
+pyphen==0.18.1
+pillow==13.0.0
+cffi==2.1.1
