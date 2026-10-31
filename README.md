@@ -27,6 +27,28 @@ future work, not something this version claims to do.
 
 Cover previews are in `gallery/` (`cover-<style>.png`).
 
+## Generated output screenshots
+
+These are real pages rendered from the PDFs that `build_all.py`
+produces from `examples/American_English_Speaking_Chunks.md`
+(130 dpi, not mock-ups). Each row shows the style's cover and one
+interior chunk page, so you can judge the layout before building.
+
+| Style | Cover | Interior page |
+|---|---|---|
+| formal | ![formal cover](gallery/cover-formal.png) | ![formal interior, p. 20](gallery/page-formal.png) |
+| muse | ![muse cover](gallery/cover-muse.png) | ![muse interior, p. 20](gallery/page-muse.png) |
+| grid | ![grid cover](gallery/cover-grid.png) | ![grid interior, p. 15](gallery/page-grid.png) |
+| playbook | ![playbook cover](gallery/cover-playbook.png) | ![playbook interior, p. 8](gallery/page-playbook.png) |
+| script | ![script cover](gallery/cover-script.png) | ![script interior, p. 8](gallery/page-script.png) |
+| editorial | ![editorial cover](gallery/cover-editorial.png) | ![editorial interior, p. 8](gallery/page-editorial.png) |
+| night | ![night cover](gallery/cover-night.png) | ![night interior, p. 8](gallery/page-night.png) |
+
+All screenshots live in `gallery/` (`cover-<style>.png` for covers,
+`page-<style>.png` for interior pages). The generated PDFs
+themselves stay out of the repo — see `AGENTS.md` — and are
+rebuilt with `python build_all.py`.
+
 ## Quick start
 
 ```bash
